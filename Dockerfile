@@ -1,6 +1,8 @@
-FROM strapi/base:12
+FROM s390x/node:12.18.3-buster
 
 WORKDIR /
+
+RUN npm install -g yarn
 
 COPY ./package.json ./
 COPY ./yarn.lock ./
