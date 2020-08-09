@@ -1,6 +1,6 @@
-FROM strapi/base
+FROM strapi/base:12
 
-WORKDIR /my-path
+WORKDIR /
 
 COPY ./package.json ./
 COPY ./yarn.lock ./
